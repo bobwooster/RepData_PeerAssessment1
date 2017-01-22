@@ -50,7 +50,7 @@ ignored.
 daily_total_steps <- tapply(activity$steps, activity$date, sum, na.rm = TRUE)
 ```
 
-Next we create a histrogram of the total number of steps taken each day.  Here is where the 
+Next we create a histrogram of the total number of steps taken each day.
 
 
 ```r
@@ -163,7 +163,9 @@ Notice that filling in the missing values resulted in the mean increasing from 9
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
-We conclude this report with an analyis of the steps taken on weekends versus weekdays.  We will work with the data with the NA values filled in, which was done in the previous section.  Our first task is to add a weekday/weekend column.
+We conclude this report with an analyis of the steps taken on weekends versus weekdays.  We will work with the data with the NA values filled in, which was done in the previous section.
+
+Our first task is to add a weekday/weekend column.
 
 
 ```r
