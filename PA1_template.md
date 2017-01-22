@@ -97,11 +97,11 @@ title(main = "Average number of steps over 5 minute intervals", xlab="Time of da
 We identify the time interval with the highest average number of steps.
 
 ```r
-names(time_series_mean)[which(time_series_mean == max(time_series_mean))]
+activity$interval[which(time_series_mean == max(time_series_mean))]
 ```
 
 ```
-## [1] "104"
+## [1] "835"
 ```
 Thus the time interval from 8:35-8:40 has the highest number of steps on average.
 
