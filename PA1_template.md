@@ -187,7 +187,7 @@ We conclude the report with a panel plot of the average number of each steps tak
 
 ```r
 library(lattice)
-xyplot(weekend_day_df$Steps ~ weekend_day_df$Interval | weekend_day_df$Day, type = "l", xaxt = activity$interval[1:288], layout = c(1,2), main = "Weekend and weekday average number of steps over 5 minute intervals", xlab = "Time of day", ylab = "Average number of steps")
+xyplot(weekend_day_df$Steps ~ weekend_day_df$Interval | weekend_day_df$Day, type = "l", xaxt = activity$interval[1:288], layout = c(1,2), main = "Weekend and weekday average number of steps over 5 minute intervals", xlab = "Time of day", ylab = "Average number of steps", scales=list(x=list(at = weekend_day_df$Interval[seq(1,288,by=25)], labels = activity$interval[seq(1,288,by=25)])))
 ```
 
 <img src="PA1_template_files/figure-html/panel plot-1.png" style="display: block; margin: auto;" />
